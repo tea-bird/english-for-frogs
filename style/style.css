@@ -23,11 +23,14 @@ html, body {
   color: gainsboro;
   background:rgba(93, 159, 192, 0.5);
 }
+img {
+  pointer-events: none;
+}
 
 /* General parameters (font, colour, etc.) */
 .App {
   width: 100vw; /*100% viewport width*/
-  height: 100vh; /*100% viewport height*/
+  min-height: 100vh; /*100% viewport height*/
   text-align: center;
   font-family: luciole;
   color: gainsboro;
@@ -36,52 +39,6 @@ html, body {
   display: block;
   flex-direction: column;
   /* background: linear-gradient(180deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(214, 237, 83, 1) 100%); */
-}
-
-/* Navigation bar (menu with "Home", "Training", etc. */
-.navbar {
-  font-size: 24px;
-  display: flex;
-  /* z-index: 1; */
-  padding-top: 12px;
-  padding-left: 8px;
-  margin-bottom: 40px;
-  /* background-color: #282c34;*/
-  background: #0a3466;
-  background: linear-gradient(90deg, rgba(10, 52, 102, 1) 0%, rgba(16, 92, 135, 1) 37%, rgba(88, 204, 175, 1) 99%);
-}
-.ul_navbar {
-  list-style-type: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex; /* horizontal alignment */
-}
-.ul_navbar li a {
-  display: block;
-  color: gainsboro;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* When a menu is hovered in the navigation bar */
-ul li a:hover:not(.active) {
-  background-color: rgba(10, 10, 10, 0.3);
-  border-radius: 25px;
-}
-ul li a.active {
-  background-color: #04AA6D;
-  border-radius: 25px;
-}
-#home_btn {
-  width: 10%;
-}
-#logo_navbar {
-  width: 60%;
-  height: 60%;
-}
-#logo_home {
-  width: 40%;
 }
 
 /* Display parameters for text */
@@ -96,63 +53,19 @@ p {
 }
 /* link colour */
 a {
-  color: #61dafb;
+  color: #44b9d9;
 }
 
- /* Switch button; source: https://www.w3schools.com/howto/howto_css_switch.asp */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+main {
+  min-height: 100vh;
 }
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
+
+footer {
+  width: 100%;
   bottom: 0;
-  background-color: #2e3a4d;
-  -webkit-transition: .4s;
-  transition: .4s;
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(17, 17, 19);
 }
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: gainsboro;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-input:checked + .slider {
-  background-color: rgb(31, 157, 129);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px rgb(31, 157, 129);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-} 
+ 

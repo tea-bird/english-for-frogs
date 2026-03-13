@@ -1,0 +1,45 @@
+/* Navigation bar (menu with "Home", "Training", etc. */
+.navbar {
+  font-size: 24px;
+  display: flex;
+  /* z-index: 1; */
+  padding-top: 12px;
+  padding-left: 8px;
+  margin-bottom: 40px;
+  /* background-color: #282c34;*/
+  background: #0a3466;
+  background: linear-gradient(90deg, rgba(10, 52, 102, 1) 0%, rgba(16, 92, 135, 1) 37%, rgba(88, 204, 175, 1) 99%);
+}
+.ul_navbar {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal alignment */
+}
+.ul_navbar li a {
+  display: block;
+  color: gainsboro;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* When a menu is hovered in the navigation bar */
+ul li a:hover:not(.active) {
+  background-color: rgba(10, 10, 10, 0.3);
+  border-radius: 25px;
+}
+ul li a.active {
+  background-color: #04AA6D;
+  border-radius: 25px;
+}
+#home_btn {
+  width: 10%;
+}
+#logo_navbar {
+  width: 60%;
+  height: 60%;
+}
+#logo_home {
+  width: 40%;
+}
