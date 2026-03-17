@@ -7,6 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgb(17, 17, 19);
 }
 @media (max-width: 800px) { /* if window smaller than 800px */
   .heading {
