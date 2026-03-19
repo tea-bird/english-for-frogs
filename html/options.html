@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="html_id">
   <head>
     <title> EFF - Options </title>
     <meta charset="UTF-8">
@@ -29,14 +29,15 @@
       </header>
 
       <main>
-        <h1> Options </h1>
+        <h1 id="h1test"> Options </h1>
         <ul>
             <li>
                 Dyslexic font
                 <label class="switch">
-                    <input type="checkbox">
+                    <input id="dysl_check" type="checkbox" onclick="toggleDyslexicMode()">
                     <span class="slider round"></span>
                 </label>
+                <script src="../script/script.js"></script>
             </li>
         </ul>
       </main>
