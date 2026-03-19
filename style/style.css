@@ -1,7 +1,11 @@
-/* font specification */
+/* font specifications */
 @font-face {
   font-family: luciole;
   src: url(../fonts/Luciole/Luciole-Regular/Luciole-Regular.ttf);
+}
+@font-face {
+  font-family: opendyslexic;
+  src: url(../fonts/opendyslexic/OpenDyslexic-Regular.otf);
 }
 /* Avoid browser-predefined borders */
 html, body {
