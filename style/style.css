@@ -55,6 +55,7 @@ img {
 p {
   color: gainsboro;
   font-size: larger;
+  line-height: 160%;
 }
 /* link colour */
 a {
