@@ -3,14 +3,35 @@
     position: relative;
     align-items: center;
 }
+table {
+    align-items: center;
+    margin: 0px auto;       /* useful for centring the table */
+}
 
 .input {
-    margin-left: 15px;
-    width: 50%;
-    border-radius: 40px;    /* round edges */
-    padding: 15px 10px;     /* size of the box itself */
-    font-size: 20px;
+    width: 70%;
+    border-radius: 20px;    /* round edges */
+    padding: 9px 5px;     /* size of the box itself */
+    font-size: 15px;
+    text-align: center;
     border: none;
     transition: 0.2s;       /* for smooth animations*/
     box-shadow: inset 0 0 5px black;
+}
+
+.validate {
+    width: 10%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: gainsboro;
+    background-color: darkcyan;
+}
+
+.validate:hover {
+    background-color: rgb(15, 103, 111);
+}
+.validate:active {
+    background-color: rgb(12, 63, 86);
 }
