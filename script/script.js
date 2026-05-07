@@ -1,11 +1,15 @@
 const title = document.getElementById("h1test")
 const checkbox = document.getElementById("dysl_check")
+var t = document.getElementsByTagName("main")
 
 checkbox.addEventListener("click", function () {
     if (checkbox.checked == true) {
-        title.innerHTML = "Hello!!"
+        document.getElementById("h1test").style.fontFamily = "opendyslexic"
+        document.getElementsByClassName("App").style.fontFamily = "opendyslexic"
+        for (i in t)
+            i.style.fontFamily = "opendyslexic"
     }else{
-        title.innerHTML = "Byyyyye"
+        document.getElementById("h1test").style.fontFamily = "luciole"
     }
 });
 
