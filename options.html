@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html id="html_id">
   <head>
-    <title> EFF - About </title>
+    <title> EFF - Options </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="../img/logo_large_outline.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo_large_outline.png">
     <!-- CSS -->
-    <link href="../style/style.css" rel="stylesheet">
-    <link href="../style/navbar.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/navbar.css" rel="stylesheet">
+    <link href="./style/options.css" rel="stylesheet">
+    <!-- JS -->
+    <link href="./script/script.js" rel="script">
   </head>
   <body>
     <div class="App">
       <header class='navbar'>
         <ul class='ul_navbar'>
           <li  id="home_btn"> <a href='index.html'> 
-            <img id="logo_navbar" src="../img/logo_large_outline.png" alt="logo small">
+            <img id="logo_navbar" src="./img/logo_large_outline.png" alt="logo small">
           </a> </li>
           <!-- <li> <a href=''> Home </a> </li> -->
           <li> <a href='quizz.html'> Training frog </a> </li>
@@ -26,17 +29,17 @@
       </header>
 
       <main>
-        <span class='heading'>
-        <img id="logo_home" src="../img/logo_white_text.png" alt="logo">  </span>
-        <h2>
-          About us
-        </h2>
-        <br>
-        <p>
-          We are a team of four students in English Studies who have
-          developed this website as a university project.
-        </p>
-        <!-- TODO: parapraph on each member of the team -->
+        <h1 id="h1test"> Options </h1>
+        <ul>
+            <li>
+                Dyslexic font
+                <label class="switch">
+                    <input id="dysl_check" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <script src="./script/script.js"></script>
+            </li>
+        </ul>
       </main>
 
       <footer>
